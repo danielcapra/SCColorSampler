@@ -55,9 +55,11 @@ SCColorSampler.sample(configuration: configuration) { hoveredColor in
 ### Configuration customization examples
 
 #### Loupe shape
+<p float="left">
 <img alt="Image showing rounded rectangle loupe shape option" src="./readme_assets/roundedRect.png" width="100" height="100">
 <img alt="Image showing rectangle loupe shape option" src="./readme_assets/rect.png" width="100" height="100">
 <img alt="Image showing circle loupe shape option" src="./readme_assets/circle.png" width="100" height="100">
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
@@ -72,9 +74,11 @@ SCColorSampler.sample(configuration: configuration) { ... }
 ```
 
 #### Loupe size
+<p float="left">
 <img alt="Image showing small loupe size option" src="./readme_assets/small.png" width="100" height="100">
 <img alt="Image showing medium loupe size option" src="./readme_assets/medium.png" width="100" height="100">
 <img alt="Image showing large loupe size option" src="./readme_assets/large.png" width="100" height="100">
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
@@ -91,10 +95,12 @@ SCColorSampler.sample(configuration: configuration) { ... }
 ```
 
 #### Quality
+<p float="left">
 <img alt="Image showing low quality option" src="./readme_assets/low.png" width="100" height="100">
 <img alt="Image showing nominal quality option" src="./readme_assets/nominal.png" width="100" height="100">
 <img alt="Image showing good quality option" src="./readme_assets/good.png" width="100" height="100">
 <img alt="Image showing great quality option" src="./readme_assets/great.png" width="100" height="100">
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
@@ -113,12 +119,14 @@ SCColorSampler.sample(configuration: configuration) { ... }
 #### Zoom starting value
 This will be the starting zoom value each time the color sampler function is called and the loupe appears.
 
+<p float="left">
 <img alt="Image showing xs zoom option" src="./readme_assets/xs.png" width="100" height="100">
 <img alt="Image showing s zoom option" src="./readme_assets/s.png" width="100" height="100">
 <img alt="Image showing m zoom option" src="./readme_assets/m.png" width="100" height="100">
 <img alt="Image showing l zoom option" src="./readme_assets/l.png" width="100" height="100">
 <img alt="Image showing xl zoom option" src="./readme_assets/xl.png" width="100" height="100">
 <img alt="Image showing xxl zoom option" src="./readme_assets/xxl.png" width="100" height="100">
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
@@ -149,12 +157,13 @@ configuration.zoomValues = [.s, .m]
 // The zoom values the user will be allowed to scrub through will be [.xs, .s, .m]
 ```
 
+<p float="left">
 <img alt="Image showing [.xs, .s] zoomValues option" src="./readme_assets/xs_s.gif" width="100" height="100">
 <img alt="Image showing [.xs, .s, .m] zoomValues option" src="./readme_assets/xs_s_m.gif" width="100" height="100">
 <img alt="Image showing [.xs, .s, .m, .l] zoomValues option" src="./readme_assets/xs_s_m_l.gif" width="100" height="100">
 <img alt="Image showing [.xs, .s, .m, .l, .xl] zoomValues option" src="./readme_assets/xs_s_m_l_xl.gif" width="100" height="100">
 <img alt="Image showing [.xs, .s, .m, .l, .xl, .xxl] zoomValues option" src="./readme_assets/xs_s_m_l_xl_xxl.gif" width="100" height="100">
-
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
@@ -178,8 +187,10 @@ SCColorSampler.sample(configuration: configuration) { ... }
 ```
 
 #### Show Color Description
+<p float="left">
 <img alt="Image showing showColorDescription off option" src="./readme_assets/off.png" width="100" height="125">
 <img alt="Image showing showColorDescription on option" src="./readme_assets/on.png" width="100" height="125">
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
@@ -194,8 +205,10 @@ SCColorSampler.sample(configuration: configuration) { ... }
 #### Color Description Method
 Customize the color description shown under the color loupe with your own method that takes in a NSColor and returns a string.
 
+<p float="left">
 <img alt="Image showing colorDescriptionMethod that shows hex values" src="./readme_assets/hex.png" width="100" height="125">
 <img alt="Image showing colorDescriptionMethod that shows rgb values" src="./readme_assets/rgb.png" width="100" height="125">
+</p>
 
 ```swift
 let configuration = SCColorSamplerConfiguration()
