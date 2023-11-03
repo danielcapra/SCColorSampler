@@ -159,9 +159,6 @@ configuration.zoomValues = [.s, .m]
 
 <p float="left">
 <img alt="Image showing [.xs, .s] zoomValues option" src="./readme_assets/xs_s.gif" width="100" height="100">
-<img alt="Image showing [.xs, .s, .m] zoomValues option" src="./readme_assets/xs_s_m.gif" width="100" height="100">
-<img alt="Image showing [.xs, .s, .m, .l] zoomValues option" src="./readme_assets/xs_s_m_l.gif" width="100" height="100">
-<img alt="Image showing [.xs, .s, .m, .l, .xl] zoomValues option" src="./readme_assets/xs_s_m_l_xl.gif" width="100" height="100">
 <img alt="Image showing [.xs, .s, .m, .l, .xl, .xxl] zoomValues option" src="./readme_assets/xs_s_m_l_xl_xxl.gif" width="100" height="100">
 </p>
 
@@ -175,13 +172,11 @@ configuration.zoomValues = [.xs] // If the only element in the array matches the
 // or
 configuration.zoomValues = [.xs, .s]
 // or
-configuration.zoomValues = [.xs, .s, .m]
+configuration.zoomValues = [.xs, .s, .xl, xxl]
 // or
-configuration.zoomValues = [.xs, .s, .m, .l]
-// or
-configuration.zoomValues = [.xs, .s, .m, .l, .xl]
-// or
-configuration.zoomValues = [.xs, .s, .m, .l, .xl, .xxl] // Default
+configuration.zoomValues = [.xxl, .s, .l, .xs]
+// or any combination you desire from these values:
+// .xs | .s | .m | .l | .xl | .xxl
 
 SCColorSampler.sample(configuration: configuration) { ... }
 ```
